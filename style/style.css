@@ -40,3 +40,28 @@ section > button {
     height: 40px;
     transform: translateY(6px);
 }
+
+section > ul {
+    margin-top: 10px;
+}
+
+section > ul > li {
+    background-color: rgba(31, 224, 224, 0.425);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    height: 32px;
+}
+
+section > ul > li > button {
+    float: right;
+}
+
+section > ul > li > button > span {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' -25,
+    'opsz' 40
+}
