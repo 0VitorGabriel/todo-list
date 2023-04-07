@@ -26,7 +26,6 @@ function add_task() {
         task.appendChild(remove_btn)
         list.appendChild(task)
 
-        localStorage.setItem('tarefa' + count, JSON.stringify(list.appendChild(task)))
 
         name_task.value = ''
         name_task.focus()
