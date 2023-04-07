@@ -28,6 +28,6 @@ function add_task() {
     }
 }
 
-function remove_task() {
-
+function remove_task(id) {
+    let id_task = document.getElementById(`${id}`).remove()
 }
