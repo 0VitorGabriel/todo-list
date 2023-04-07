@@ -13,8 +13,8 @@ body {
 main {
     background-color: white;
     margin: auto;
-    width: 500px;
-    min-height: 100px;
+    width: 400px;
+    min-height: 120px;
     padding: 20px;
     border-radius: 20px;
     transform: translateY(200px);
