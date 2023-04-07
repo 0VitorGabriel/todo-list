@@ -19,10 +19,15 @@ function add_task() {
         remove_btn.setAttribute('onclick', `remove_task(${count})`)
 
         task.innerHTML = `${name_task.value}`
-        remove_btn.innerHTML = `remove`
+        remove_btn.innerHTML = `<span class="material-symbols-outlined">
+        delete
+        </span>`
 
         task.appendChild(remove_btn)
         lista.appendChild(task)
+
+        name_task.value = ''
+        name_task.focus()
     }
 }
 
