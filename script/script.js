@@ -9,7 +9,7 @@ function add_task() {
     if (name_task.value) {
         count++
 
-        let lista = document.querySelector('ul')
+        let list = document.querySelector('ul')
 
         let task = document.createElement('li')
 
@@ -24,7 +24,9 @@ function add_task() {
         </span>`
 
         task.appendChild(remove_btn)
-        lista.appendChild(task)
+        list.appendChild(task)
+
+        localStorage.setItem('tarefa' + count, JSON.stringify(list.appendChild(task)))
 
         name_task.value = ''
         name_task.focus()
