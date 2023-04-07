@@ -15,7 +15,7 @@ function add_task() {
 
         let remove_btn = document.createElement('button')
 
-        task.setAttribute('id', count)
+        task.setAttribute('id', `${count}`)
         remove_btn.setAttribute('onclick', `remove_task(${count})`)
 
         task.innerHTML = `${name_task.value}`
@@ -23,8 +23,6 @@ function add_task() {
 
         task.appendChild(remove_btn)
         lista.appendChild(task)
-
-        console.log(lista)
     }
 }
 
