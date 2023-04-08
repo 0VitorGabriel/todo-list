@@ -71,3 +71,15 @@ section > ul > li > button > span {
         width: 600px;
     }
 }
+
+.display {
+    display: inline;
+}
+
+.height_paragraph {
+    transform: translateY(6px);
+}
+
+.height_icon {
+    transform: translateY(-18px);
+}

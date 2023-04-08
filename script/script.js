@@ -1,5 +1,5 @@
-let add_task_btn = document.querySelector('button')
-let name_task = document.querySelector('input#name_task')
+const add_task_btn = document.querySelector('button')
+const name_task = document.querySelector('input#name_task')
 
 add_task_btn.addEventListener('click', add_task)
 
@@ -9,20 +9,25 @@ function add_task() {
     if (name_task.value) {
         count++
 
-        let list = document.querySelector('ul')
+        const list = document.querySelector('ul')
 
-        let task = document.createElement('li')
+        const task = document.createElement('li')
+        const task_content = document.createElement('p')
 
-        let remove_btn = document.createElement('button')
+        const remove_btn = document.createElement('button')
 
         task.setAttribute('id', `${count}`)
         remove_btn.setAttribute('onclick', `remove_task(${count})`)
 
-        task.innerHTML = `${name_task.value}`
+        task_content.innerHTML = `${name_task.value}`
+        task_content.classList.add('height_paragraph')
+
         remove_btn.innerHTML = `<span class="material-symbols-outlined">
         delete
         </span>`
+        remove_btn.classList.add('height_icon')
 
+        task.appendChild(task_content)
         task.appendChild(remove_btn)
         list.appendChild(task)
 
@@ -32,5 +37,5 @@ function add_task() {
 }
 
 function remove_task(id) {
-    let id_task = document.getElementById(`${id}`).remove()
+    const id_task = document.getElementById(`${id}`).remove()
 }
